@@ -77,12 +77,13 @@ var generatePassword = function () {
     if (characterConfirm === true) {
       console.log("yes special characters");
       console.log(yesSpecial(getLength));
-      yesSpecial(getLength);
+      return yesSpecial(getLength);
+      
       // If no, then don't include special characters
     } else if (characterConfirm === false) {
       console.log("no special characters");
       console.log(noSpecial(getLength));
-      noSpecial(getLength);
+      return noSpecial(getLength);
     } 
   }
 }
